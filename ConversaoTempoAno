@@ -1,0 +1,27 @@
+package Testes;
+import java.util.Scanner;
+public class ConversaoTempo {
+
+	public static Scanner leia = new Scanner(System.in);
+	public static void main(String[]args){
+		double meses, anos, dias, semanas, horas, minutos, segundos;
+		System.out.println("Programa de Conversão de Tempo");
+		System.out.println("Digite o ano");
+		anos = leia.nextDouble();
+		
+		meses = anos*12;
+		dias = anos*365;
+		semanas = dias/7;
+		horas = dias*24;
+		minutos = dias*60;
+		segundos = minutos*60;
+		
+		System.out.printf("\nA quantidade de Meses é: %.2f",meses);
+		System.out.printf("\nA quantidade de Semanas é: %.2f",semanas);
+		System.out.printf("\nA quantidade de Dias é: %.2f",dias);
+		System.out.printf("\nA quantidade de Horas é: %.2f",horas);
+		System.out.printf("\nA quantidade de Minutos é: %.2f",minutos);
+		System.out.printf("\nA quantidade de Segundos é: %.2f",segundos);
+	}
+	
+}
